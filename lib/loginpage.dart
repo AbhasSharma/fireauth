@@ -65,7 +65,7 @@ class _LoginPageState extends State<LoginPage> {
           ),
           OutlinedButton.icon(
               onPressed: () {
-                login();
+                loginnow();
               },
               icon: Icon(Icons.login),
               label: Text("Login"))
@@ -74,7 +74,7 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  Future<void>login() async {
+  Future<void>loginnow() async {
     var baseurl =  "http://raushanjha.in/demoapi/login.php";
     var params = {
       "email": emailcontroller.text,
